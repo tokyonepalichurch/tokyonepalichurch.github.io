@@ -2,32 +2,30 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="BDBfhOKJpRrcEV0vPFdlT0SwznUE3yNn0km0OXD6YqQ" />
-  <!-- SEO Meta Tags -->
-<meta name="description" content="Tokyo Nepali Church (TNC) — A Nepali Christian church in Tokyo, Japan. Join us for Sunday worship, Bible study, and fellowship. टोकियो नेपाली चर्च — जापान।">
-<meta name="keywords" content="Tokyo Nepali Church, TNC Japan, Nepali Church Tokyo, Nepali Christian Japan, टोकियो नेपाली चर्च, नेपाली चर्च जापान">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Tokyo Nepali Church Japan">
-<link rel="canonical" href="https://tokyonepalichurch.github.io/">
+  <title>Tokyo Nepali Church | Nepali Christian Fellowship in Tokyo Japan</title>
 
-<!-- Open Graph (for Google + Facebook preview) -->
-<meta property="og:title" content="Tokyo Nepali Church — TNC Japan">
-<meta property="og:description" content="Nepali Christian Church in Tokyo, Japan. Sunday worship every week. टोकियो नेपाली चर्च।">
-<meta property="og:url" content="https://tokyonepalichurch.github.io/">
-<meta property="og:image" content="https://raw.githubusercontent.com/tokyonepalichurch/tokyonepalichurch.github.io/refs/heads/main/favicon.png">
-<meta property="og:type" content="website">
-  
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tokyo Nepali Church | Nepali Christian Fellowship in Tokyo Japan</title>
-<meta name="description" content="A welcoming Nepali Christian church in Tokyo offering Sunday worship, youth fellowship, sermons, prayer, and community for all believers.">
-<meta name="keywords" content="Nepali church Tokyo, Christian fellowship Japan, Sunday service Tokyo, Nepali church Japan">
-<meta property="og:title" content="Tokyo Nepali Church | Nepali Christian Fellowship in Tokyo Japan">
-<meta property="og:description" content="A welcoming Nepali Christian church in Tokyo offering Sunday worship, youth fellowship, sermons, prayer, and community for all believers.">
-<meta property="og:type" content="website">
-<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/tokyonepalichurch/tokyonepalichurch.github.io/refs/heads/main/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&family=Poppins:wght@300;400;500;600;700;800&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Tokyo Nepali Church (TNC) — A welcoming, Bible-believing, Christ-centered Nepali Christian church in Tokyo, Japan. Join us for Sunday worship, youth fellowship, Bible study, and prayer. टोकियो नेपाली चर्च — जापान।">
+  <meta name="keywords" content="Tokyo Nepali Church, TNC Japan, Nepali Church Tokyo, Nepali Christian Japan, टोकियो नेपाली चर्च, नेपाली चर्च जापान, Nepali Fellowship Tokyo">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Tokyo Nepali Church Japan">
+  <link rel="canonical" href="https://tokyonepalichurch.github.io/">
+
+  <!-- Open Graph (for Google, Facebook & social preview) -->
+  <meta property="og:title" content="Tokyo Nepali Church | Nepali Christian Fellowship in Tokyo Japan">
+  <meta property="og:description" content="A welcoming Nepali Christian church in Tokyo offering Sunday worship, youth fellowship, sermons, prayer, and community for all believers. टोकियो नेपाली चर्च।">
+  <meta property="og:url" content="https://tokyonepalichurch.github.io/">
+  <meta property="og:image" content="https://raw.githubusercontent.com/tokyonepalichurch/tokyonepalichurch.github.io/refs/heads/main/favicon.png">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/tokyonepalichurch/tokyonepalichurch.github.io/refs/heads/main/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&family=Poppins:wght@300;400;500;600;700;800&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <style>
 /* ===== CSS VARIABLES ===== */
@@ -64,6 +62,7 @@
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 html {
   scroll-behavior: smooth;
@@ -74,10 +73,31 @@ body {
   color: var(--text-body);
   background: var(--white);
   line-height: 1.7;
+  overflow-x: hidden;
+  width: 100%;
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
+
+/* Mobile Touch Target & iOS Auto-Zoom Prevention */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="url"],
+textarea,
+select {
+  font-size: 16px !important;
+  min-height: 48px;
+  box-sizing: border-box;
+}
+textarea {
+  min-height: 110px;
+}
+button, .btn, .btn-primary, .btn-gold, .btn-outline, .social-btn {
+  min-height: 44px;
+}
 
 h1, h2, h3, h4 {
   font-family: 'Poppins', 'Montserrat', sans-serif;
@@ -1587,6 +1607,28 @@ footer {
 }
 
 /* ===== RESPONSIVE ===== */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.mobile-menu.active {
+  display: block;
+  animation: slideDown 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+  justify-items: center;
+}
+
 @media (max-width: 992px) {
   .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
@@ -1594,25 +1636,32 @@ footer {
   .gallery-item:nth-child(1), .gallery-item:nth-child(4) { grid-column: span 1; grid-row: span 1; }
 }
 @media (max-width: 768px) {
-  .section { padding: 60px 0; }
+  .section { padding: 50px 0; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
-  .hero-content { padding: 100px 20px 70px; }
+  .hero-content { padding: 80px 16px 60px; }
   .about-image { display: none; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
   .footer-bottom { flex-direction: column; text-align: center; }
-  .prayer-box { padding: 36px 24px; }
+  .prayer-box { padding: 32px 20px; }
   .service-cards { grid-template-columns: 1fr; }
   .events-grid { grid-template-columns: 1fr; }
+  .sermons-grid { grid-template-columns: 1fr; }
   .social-links { flex-wrap: wrap; }
   .map-info { flex-direction: column; align-items: flex-start; }
+  .leadership-grid { grid-template-columns: repeat(2, 1fr); gap: 24px 16px; }
 }
 @media (max-width: 480px) {
-  .hero h1 { font-size: 38px; }
+  .container { padding: 0 16px; }
+  .hero h1 { font-size: 32px; }
   .hero-buttons { flex-direction: column; align-items: center; }
   .gallery-grid { grid-template-columns: 1fr; }
   .sermons-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
+  .leadership-grid { grid-template-columns: 1fr; gap: 24px; }
+  .prayer-box { padding: 24px 14px; }
+  .home-prayer-card { padding: 24px 16px !important; }
+  #prayer-page-form { padding: 20px 14px !important; }
 }
 
 /* Active page nav */
@@ -1645,13 +1694,13 @@ footer {
         <span>080-4180-4463</span>
       </a>
       <div class="topbar-social">
-        <a href="https://www.youtube.com/@TokyoNepaliChurchJapan" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube">
+        <a href="https://www.youtube.com/@TokyoNepaliChurchJapan" target="_blank" rel="noopener noreferrer" title="YouTube" aria-label="YouTube">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
         </a>
-        <a href="https://www.facebook.com/profile.php?id=100068941296101" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook">
+        <a href="https://www.facebook.com/profile.php?id=100068941296101" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
         </a>
-        <a href="https://www.tiktok.com/@tokyonepalichurch1" target="_blank" rel="noopener" title="TikTok" aria-label="TikTok">
+        <a href="https://www.tiktok.com/@tokyonepalichurch1" target="_blank" rel="noopener noreferrer" title="TikTok" aria-label="TikTok">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
         </a>
       </div>
@@ -1662,7 +1711,7 @@ footer {
 <!-- ===== HEADER & NAVIGATION ===== -->
 <header id="mainHeader">
   <div class="header-inner">
-    <a href="#" class="logo" onclick="showPage('home')" aria-label="Tokyo Nepali Church Home">
+    <a href="#home" class="logo" onclick="showPage('home', event)" aria-label="Tokyo Nepali Church Home">
       <div class="logo-img-box">
         <img src="https://raw.githubusercontent.com/tokyonepalichurch/tokyonepalichurch.github.io/refs/heads/main/Final%20LOGO%20PNG.png" alt="Tokyo Nepali Church Logo" class="logo-img" width="48" height="48">
       </div>
@@ -1674,13 +1723,14 @@ footer {
 
     <nav class="nav-desktop">
       <ul class="nav-menu" id="navLinks">
-        <li><a href="#" onclick="showPage('home')" class="nav-link active-page" id="nav-home">Home</a></li>
-        <li><a href="#" onclick="showPage('about')" class="nav-link" id="nav-about">About Us</a></li>
-        <li><a href="#" onclick="showPage('sermons')" class="nav-link" id="nav-sermons">Sermons</a></li>
-        <li><a href="#" onclick="showPage('events')" class="nav-link" id="nav-events">Fellowships</a></li>
-        <li><a href="#" onclick="showPage('gallery')" class="nav-link" id="nav-gallery">Gallery</a></li>
+        <li><a href="#home" onclick="showPage('home', event)" class="nav-link active-page" id="nav-home">Home</a></li>
+        <li><a href="#about" onclick="showPage('about', event)" class="nav-link" id="nav-about">About Us</a></li>
+        <li><a href="#sermons" onclick="showPage('sermons', event)" class="nav-link" id="nav-sermons">Sermons</a></li>
+        <li><a href="#events" onclick="showPage('events', event)" class="nav-link" id="nav-events">Fellowships</a></li>
+        <li><a href="#gallery" onclick="showPage('gallery', event)" class="nav-link" id="nav-gallery">Gallery</a></li>
         <li><a href="#service-section" onclick="navigateToLocation(event)" class="nav-link" id="nav-location">Location</a></li>
-        <li><a href="#" onclick="showPage('contact')" class="nav-link" id="nav-contact">Contact</a></li>
+        <li><a href="#prayer" onclick="showPage('prayer', event)" class="nav-link" id="nav-prayer">Prayer</a></li>
+        <li><a href="#contact" onclick="showPage('contact', event)" class="nav-link" id="nav-contact">Contact</a></li>
       </ul>
       <a href="#service-section" onclick="navigateToLocation(event)" class="nav-cta">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
@@ -1698,28 +1748,28 @@ footer {
   <!-- Mobile Menu Drawer -->
   <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-inner">
-      <a href="#" onclick="showPage('home'); toggleMobile()" class="mobile-link" id="m-nav-home">
+      <a href="#home" onclick="showPage('home', event); toggleMobile()" class="mobile-link" id="m-nav-home">
         <span class="m-icon">🏠</span> <span>गृहपृष्ठ · Home</span>
       </a>
-      <a href="#" onclick="showPage('about'); toggleMobile()" class="mobile-link" id="m-nav-about">
+      <a href="#about" onclick="showPage('about', event); toggleMobile()" class="mobile-link" id="m-nav-about">
         <span class="m-icon">📖</span> <span>हाम्रोबारे · About Us</span>
       </a>
-      <a href="#" onclick="showPage('sermons'); toggleMobile()" class="mobile-link" id="m-nav-sermons">
+      <a href="#sermons" onclick="showPage('sermons', event); toggleMobile()" class="mobile-link" id="m-nav-sermons">
         <span class="m-icon">🎥</span> <span>वचन र सन्देश · Sermons</span>
       </a>
-      <a href="#" onclick="showPage('events'); toggleMobile()" class="mobile-link" id="m-nav-events">
+      <a href="#events" onclick="showPage('events', event); toggleMobile()" class="mobile-link" id="m-nav-events">
         <span class="m-icon">📅</span> <span>संगति र कार्यक्रम · Fellowships</span>
       </a>
-      <a href="#" onclick="showPage('gallery'); toggleMobile()" class="mobile-link" id="m-nav-gallery">
+      <a href="#gallery" onclick="showPage('gallery', event); toggleMobile()" class="mobile-link" id="m-nav-gallery">
         <span class="m-icon">🖼</span> <span>तस्विरहरू · Gallery</span>
       </a>
       <a href="#service-section" onclick="navigateToLocation(event); toggleMobile()" class="mobile-link" id="m-nav-location">
         <span class="m-icon">📍</span> <span>स्थान र नक्सा · Location</span>
       </a>
-      <a href="#" onclick="showPage('prayer'); toggleMobile()" class="mobile-link" id="m-nav-prayer">
+      <a href="#prayer" onclick="showPage('prayer', event); toggleMobile()" class="mobile-link" id="m-nav-prayer">
         <span class="m-icon">🙏</span> <span>प्रार्थना अनुरोध · Prayer</span>
       </a>
-      <a href="#" onclick="showPage('contact'); toggleMobile()" class="mobile-link" id="m-nav-contact">
+      <a href="#contact" onclick="showPage('contact', event); toggleMobile()" class="mobile-link" id="m-nav-contact">
         <span class="m-icon">📞</span> <span>सम्पर्क · Contact</span>
       </a>
       <div class="mobile-menu-cta">
@@ -1767,11 +1817,11 @@ footer {
         </p>
 
         <div class="hero-btns fade-up">
-          <a href="#" onclick="showPage('about')" class="btn btn-gold">
+          <a href="#about" onclick="showPage('about', event)" class="btn btn-gold">
             <span>हाम्रोबारे जान्नुहोस्</span>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
           </a>
-          <a href="#" onclick="showPage('contact')" class="btn btn-outline">
+          <a href="#contact" onclick="showPage('contact', event)" class="btn btn-outline">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
             <span>हामीसँग जोडिनुहोस्</span>
           </a>
@@ -1957,7 +2007,7 @@ footer {
             </div>
           </div>
           <div style="margin-top:28px;">
-            <a href="#" class="btn btn-primary" onclick="showPage('about')">Learn More About Us →</a>
+            <a href="#about" class="btn btn-primary" onclick="showPage('about', event)">Learn More About Us →</a>
           </div>
         </div>
         <div class="about-image fade-up">
@@ -2014,7 +2064,7 @@ footer {
         </div>
       </div>
       <div style="text-align:center; margin-top:40px;">
-        <a href="#" class="btn btn-primary" onclick="showPage('sermons')">View All Sermons →</a>
+        <a href="#sermons" class="btn btn-primary" onclick="showPage('sermons', event)">View All Sermons →</a>
       </div>
     </div>
   </section>
@@ -2108,7 +2158,7 @@ footer {
         </div>
       </div>
       <div style="text-align:center; margin-top:36px;">
-        <a href="#" class="btn btn-primary" onclick="showPage('gallery')">View Full Gallery →</a>
+        <a href="#gallery" class="btn btn-primary" onclick="showPage('gallery', event)">View Full Gallery →</a>
       </div>
     </div>
   </section>
@@ -2143,7 +2193,7 @@ footer {
             JR Yamanote Line · Tokyo
           </div>
         </div>
-        <a href="https://maps.google.com/?q=1+Chome-3-3+Shimo-Ochiai,+Shinjuku+City,+Tokyo,+Japan" target="_blank" class="btn btn-gold">
+        <a href="https://maps.google.com/?q=1+Chome-3-3+Shimo-Ochiai,+Shinjuku+City,+Tokyo,+Japan" target="_blank" rel="noopener noreferrer" class="btn btn-gold">
           📍 Get Directions
         </a>
       </div>
@@ -2200,42 +2250,45 @@ footer {
           </div>
 
           <div class="social-links" style="margin-top: 24px;">
-            <a href="https://www.facebook.com/profile.php?id=100068941296101" class="social-btn fb" target="_blank">📘 Facebook</a>
-            <a href="https://www.youtube.com/@TokyoNepaliChurchJapan" class="social-btn yt" target="_blank">▶ YouTube</a>
-            <a href="https://www.tiktok.com/@tokyonepalichurch1" class="social-btn tk" target="_blank">♪ TikTok</a>
+            <a href="https://www.facebook.com/profile.php?id=100068941296101" class="social-btn fb" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
+            <a href="https://www.youtube.com/@TokyoNepaliChurchJapan" class="social-btn yt" target="_blank" rel="noopener noreferrer">▶ YouTube</a>
+            <a href="https://www.tiktok.com/@tokyonepalichurch1" class="social-btn tk" target="_blank" rel="noopener noreferrer">♪ TikTok</a>
           </div>
         </div>
 
         <!-- Right: Prayer Request Form -->
-        <div class="fade-up" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius); padding: 36px;">
+        <div class="fade-up home-prayer-card" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius); padding: 36px;">
           <h3 class="nepali" style="color: var(--white); font-size: 19px; font-weight:700; margin-bottom: 24px;">🙏 प्रार्थनाको विषय यहाँबाट हामीलाई पठाउनुहोस्</h3>
 
-          <div style="margin-bottom: 18px;">
-            <label class="nepali" style="display:block; color:rgba(255,255,255,0.65); font-size:13px; margin-bottom:6px;">तपाईंको नाम</label>
-            <input type="text" id="prayer-name" placeholder="पूरा नाम लेख्नुहोस्"
-              style="width:100%; padding:12px 16px; background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.15); border-radius:var(--radius-sm); color:var(--white); font-family:'Noto Sans Devanagari',sans-serif; font-size:14px; outline:none; transition:border 0.2s;"
-              onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(255,255,255,0.15)'">
-          </div>
+          <form id="prayer-form">
+            <input type="hidden" name="time" id="prayer-time">
+            <div style="margin-bottom: 18px;">
+              <label class="nepali" style="display:block; color:rgba(255,255,255,0.65); font-size:13px; margin-bottom:6px;">तपाईंको नाम</label>
+              <input type="text" id="prayer-name" name="from_name" placeholder="पूरा नाम लेख्नुहोस्"
+                style="width:100%; min-height:48px; padding:12px 16px; background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.15); border-radius:var(--radius-sm); color:var(--white); font-family:'Noto Sans Devanagari',sans-serif; font-size:16px; outline:none; transition:border 0.2s;"
+                onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(255,255,255,0.15)'">
+            </div>
 
-          <div style="margin-bottom: 18px;">
-            <label class="nepali" style="display:block; color:rgba(255,255,255,0.65); font-size:13px; margin-bottom:6px;">इमेल वा फोन</label>
-            <input type="text" id="prayer-contact" placeholder="सम्पर्क नम्बर वा इमेल"
-              style="width:100%; padding:12px 16px; background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.15); border-radius:var(--radius-sm); color:var(--white); font-family:'Noto Sans Devanagari',sans-serif; font-size:14px; outline:none; transition:border 0.2s;"
-              onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(255,255,255,0.15)'">
-          </div>
+            <div style="margin-bottom: 18px;">
+              <label class="nepali" style="display:block; color:rgba(255,255,255,0.65); font-size:13px; margin-bottom:6px;">इमेल वा फोन</label>
+              <input type="text" id="prayer-contact" name="contact_info" placeholder="सम्पर्क नम्बर वा इमेल"
+                style="width:100%; min-height:48px; padding:12px 16px; background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.15); border-radius:var(--radius-sm); color:var(--white); font-family:'Noto Sans Devanagari',sans-serif; font-size:16px; outline:none; transition:border 0.2s;"
+                onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(255,255,255,0.15)'">
+            </div>
 
-          <div style="margin-bottom: 24px;">
-            <label class="nepali" style="display:block; color:rgba(255,255,255,0.65); font-size:13px; margin-bottom:6px;">सन्देश</label>
-            <textarea id="prayer-message" rows="5" placeholder="यहाँ आफ्नो प्रार्थनाको विषय लेख्नुहोस्..."
-              style="width:100%; padding:12px 16px; background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.15); border-radius:var(--radius-sm); color:var(--white); font-family:'Noto Sans Devanagari',sans-serif; font-size:14px; outline:none; resize:vertical; transition:border 0.2s;"
-              onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(255,255,255,0.15)'"></textarea>
-          </div>
+            <div style="margin-bottom: 24px;">
+              <label class="nepali" style="display:block; color:rgba(255,255,255,0.65); font-size:13px; margin-bottom:6px;">सन्देश</label>
+              <textarea id="prayer-message" name="message" rows="5" placeholder="यहाँ आफ्नो प्रार्थनाको विषय लेख्नुहोस्..."
+                style="width:100%; min-height:110px; padding:12px 16px; background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.15); border-radius:var(--radius-sm); color:var(--white); font-family:'Noto Sans Devanagari',sans-serif; font-size:16px; outline:none; resize:vertical; transition:border 0.2s;"
+                onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(255,255,255,0.15)'"></textarea>
+            </div>
 
-          <button onclick="submitPrayerRequest()"
-            style="width:100%; padding:14px; background:linear-gradient(135deg,var(--gold),var(--gold-light)); color:var(--navy-dark); border:none; border-radius:var(--radius-pill); font-family:'Noto Sans Devanagari','Poppins',sans-serif; font-size:15px; font-weight:700; cursor:pointer; letter-spacing:0.3px; transition:var(--transition);"
-            onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">
-            सन्देश पठाउनुहोस्
-          </button>
+            <button type="submit" id="prayer-submit-btn"
+              style="width:100%; min-height:48px; padding:14px; background:linear-gradient(135deg,var(--gold),var(--gold-light)); color:var(--navy-dark); border:none; border-radius:var(--radius-pill); font-family:'Noto Sans Devanagari','Poppins',sans-serif; font-size:15.5px; font-weight:700; cursor:pointer; letter-spacing:0.3px; transition:var(--transition);"
+              onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">
+              सन्देश पठाउनुहोस्
+            </button>
+          </form>
 
           <p id="prayer-status" style="text-align:center; margin-top:14px; font-size:13px; display:none;"></p>
         </div>
@@ -2280,7 +2333,7 @@ footer {
           </div>
         </div>
         <div>
-          <img src="https://raw.githubusercontent.com/tokyonepalichurch/tokyonepalichurch.github.io/refs/heads/main/banner.jpg" alt="Worship" style="width:100%;height:380px;object-fit:cover;border-radius:16px;box-shadow:var(--shadow-lg);margin-bottom:24px;">
+          <img src="https://raw.githubusercontent.com/tokyonepalichurch/tokyonepalichurch.github.io/refs/heads/main/banner.jpg" alt="Tokyo Nepali Church Worship" style="width:100%;max-height:380px;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;box-shadow:var(--shadow-lg);margin-bottom:24px;">
           <div style="background:var(--primary);color:var(--white);border-radius:16px;padding:28px;">
             <h3 style="color:var(--gold-light);margin-bottom:16px;font-family:'Montserrat',sans-serif;">Our Beliefs</h3>
             <ul style="display:flex;flex-direction:column;gap:10px;font-size:14px;">
@@ -2331,7 +2384,7 @@ footer {
         <h2>Church Leadership</h2>
         <div class="gold-line"></div>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;justify-items:center;">
+      <div class="leadership-grid">
         <div style="text-align:center;">
           <img src="https://raw.githubusercontent.com/tokyonepalichurch/tokyonepalichurch.github.io/refs/heads/main/Pastor%20Prakash%20Granja.jpg" alt="Pastor Prakash Granja" style="width:160px;height:160px;object-fit:cover;border-radius:50%;border:4px solid var(--gold);margin-bottom:16px;">
           <h4 style="font-family:'Montserrat',sans-serif;color:var(--primary);margin-bottom:4px;">Prakash Granja</h4>
@@ -2348,7 +2401,7 @@ footer {
           <p style="color:var(--gold);font-weight:700;font-size:13px;letter-spacing:1px;">ELDER</p>
         </div>
         <div style="text-align:center;">
-          <img src="https://raw.githubusercontent.com/tokyonepalichurch/tokyonepalichurch.github.io/refs/heads/main/Deacon%20Shyam%20Rai.jpg" alt="Deacon Shyam Rai" style="width:160px;height:160px;object-fit:cover;border-radius:50%;border:4px solid var(--gold);margin-bottom:16px;">
+          <img src="https://raw.githubusercontent.com/tokyonepalichurch/tokyonepalichurch.github.io/refs/heads/main/Deacon_Shyam_Rai.jpg" alt="Deacon Shyam Rai" style="width:160px;height:160px;object-fit:cover;border-radius:50%;border:4px solid var(--gold);margin-bottom:16px;">
           <h4 style="font-family:'Montserrat',sans-serif;color:var(--primary);margin-bottom:4px;">Shyam Rai</h4>
           <p style="color:var(--gold);font-weight:700;font-size:13px;letter-spacing:1px;">DEACON</p>
         </div>
@@ -2409,7 +2462,7 @@ footer {
       <div style="text-align:center;margin-top:40px;padding:32px;background:var(--gold-pale);border-radius:16px;border:1px solid var(--gold);">
         <p style="font-family:'Montserrat',sans-serif;font-weight:700;color:var(--primary);font-size:17px;margin-bottom:8px;">📺 Subscribe to our YouTube Channel</p>
         <p class="nepali" style="color:var(--text-body);font-size:14px;margin-bottom:20px;">हाम्रो YouTube च्यानल सब्स्क्राइब गर्नुहोस् र नयाँ सन्देशहरू सबैभन्दा पहिले पाउनुहोस्।</p>
-        <a href="https://www.youtube.com/@TokyoNepaliChurchJapan" target="_blank" class="btn btn-primary">▶ Tokyo Nepali Church Japan — YouTube</a>
+        <a href="https://www.youtube.com/@TokyoNepaliChurchJapan" target="_blank" rel="noopener noreferrer" class="btn btn-primary">▶ Tokyo Nepali Church Japan — YouTube</a>
       </div>
     </div>
   </section>
@@ -2517,17 +2570,65 @@ footer {
         <div class="verse nepali">
           <strong>फिलिप्पी ४:६ —</strong> "कुनै कुराले पनि तिमीहरू चिन्ताकुल नहोऊ, तर सबै परिस्थितिमा प्रार्थना र बिन्तीद्वारा धन्यवाद सहित परमेश्वर अगाडि आफ्ना माग पेस गर।"
         </div>
-        <p>We would love to pray with you. Send your prayer requests through our <strong>Facebook page</strong> and our pastoral team will pray for you.</p>
-        <p class="nepali" style="font-size:14px;color:var(--text-light);margin-top:8px;">
-          हामी प्रभु येशूको नाममा तपाईंको लागि प्रार्थना गर्न तयार छौं। कृपया आफ्नो प्रार्थनाको निवेदन हाम्रो <strong>Facebook पेज</strong> मा पठाउनुहोस् — परमेश्वर तपाईंको प्रार्थना सुन्नुहुन्छ।
+        <p class="nepali" style="font-size:15px; color:var(--text-body); margin: 20px 0 28px;">
+          हामी प्रभु येशूको नाममा तपाईंको लागि प्रार्थना गर्न तयार छौं। तलको फारम भरेर आफ्नो प्रार्थनाको निवेदन पठाउनुहोस् — मण्डलीको टोलीले तपाईंको निम्ति प्रार्थना गर्नेछ।
         </p>
-        <div style="margin-top:32px; display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
-          <a href="https://www.facebook.com/profile.php?id=100068941296101" target="_blank" class="btn btn-primary">📘 Send via Facebook</a>
-          <a href="mailto:onlinetncgroup@gmail.com" class="btn btn-outline" style="color:var(--primary);border-color:var(--primary);">✉ Email Us</a>
-        </div>
-        <div style="margin-top:28px;padding:20px;background:var(--off-white);border-radius:12px;font-size:13px;color:var(--text-light);">
-          <p>📞 Pastor Prakash Granja — <strong>080-4180-4463</strong></p>
-          <p>✉ onlinetncgroup@gmail.com</p>
+
+        <!-- Interactive Prayer Request Form -->
+        <form id="prayer-page-form" style="text-align: left; background: var(--off-white); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px 28px;">
+          <input type="hidden" name="time" id="prayer-page-time">
+
+          <div style="margin-bottom: 20px;">
+            <label class="nepali" for="prayer-page-name" style="display:block; color:var(--text-dark); font-size:14px; font-weight:600; margin-bottom:8px;">
+              पूरा नाम <span style="color:#ef4444;">*</span>
+            </label>
+            <input type="text" id="prayer-page-name" name="from_name" required placeholder="तपाईंको पूरा नाम"
+              style="width:100%; min-height:48px; padding:13px 16px; background:var(--white); border:1.5px solid var(--border); border-radius:var(--radius-sm); color:var(--text-dark); font-family:'Noto Sans Devanagari',sans-serif; font-size:16px; outline:none; transition:var(--transition); box-sizing:border-box;"
+              onfocus="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 0 0 3px rgba(196,154,42,0.15)'"
+              onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <label class="nepali" for="prayer-page-contact" style="display:block; color:var(--text-dark); font-size:14px; font-weight:600; margin-bottom:8px;">
+              सम्पर्क (इमेल वा फोन) <span style="color:#ef4444;">*</span>
+            </label>
+            <input type="text" id="prayer-page-contact" name="contact_info" required placeholder="इमेल वा फोन नम्बर"
+              style="width:100%; min-height:48px; padding:13px 16px; background:var(--white); border:1.5px solid var(--border); border-radius:var(--radius-sm); color:var(--text-dark); font-family:'Noto Sans Devanagari',sans-serif; font-size:16px; outline:none; transition:var(--transition); box-sizing:border-box;"
+              onfocus="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 0 0 3px rgba(196,154,42,0.15)'"
+              onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
+          </div>
+
+          <div style="margin-bottom: 24px;">
+            <label class="nepali" for="prayer-page-message" style="display:block; color:var(--text-dark); font-size:14px; font-weight:600; margin-bottom:8px;">
+              प्रार्थनाको विषय <span style="color:#ef4444;">*</span>
+            </label>
+            <textarea id="prayer-page-message" name="message" rows="5" required placeholder="तपाईंको प्रार्थनाको विषय यहाँ लेख्नुहोस्..."
+              style="width:100%; min-height:110px; padding:13px 16px; background:var(--white); border:1.5px solid var(--border); border-radius:var(--radius-sm); color:var(--text-dark); font-family:'Noto Sans Devanagari',sans-serif; font-size:16px; outline:none; resize:vertical; transition:var(--transition); box-sizing:border-box;"
+              onfocus="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 0 0 3px rgba(196,154,42,0.15)'"
+              onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none'"></textarea>
+          </div>
+
+          <button type="submit" id="prayer-page-submit-btn" class="nepali"
+            style="width:100%; min-height:48px; padding:15px; background:linear-gradient(135deg,var(--gold),var(--gold-light)); color:var(--navy-dark); border:none; border-radius:var(--radius-pill); font-family:'Noto Sans Devanagari','Montserrat',sans-serif; font-size:15.5px; font-weight:700; cursor:pointer; letter-spacing:0.3px; transition:var(--transition); box-shadow:var(--shadow-sm);"
+            onmouseover="this.style.opacity='0.9'; this.style.transform='translateY(-1px)'"
+            onmouseout="this.style.opacity='1'; this.style.transform='none'">
+            प्रार्थना अनुरोध पठाउनुहोस्
+          </button>
+
+          <div id="prayer-page-status" style="display:none; margin-top:20px; padding:14px 18px; border-radius:var(--radius-sm); font-size:14px; line-height:1.6; text-align:center;"></div>
+        </form>
+
+        <div style="margin-top:32px; padding-top:28px; border-top:1px solid var(--border); text-align:center;">
+          <p class="nepali" style="font-size:13.5px; color:var(--text-light); margin-bottom:14px;">
+            वा हामीसँग सिधै जोडिन सक्नुहुन्छ:
+          </p>
+          <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+            <a href="https://www.facebook.com/profile.php?id=100068941296101" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding:9px 18px; font-size:13px; color:var(--primary); border-color:var(--border);">📘 Facebook Page</a>
+            <a href="mailto:onlinetncgroup@gmail.com" class="btn btn-outline" style="padding:9px 18px; font-size:13px; color:var(--primary); border-color:var(--border);">✉ Email Us</a>
+          </div>
+          <div style="margin-top:20px; font-size:13px; color:var(--text-light);">
+            <p>📞 Pastor Prakash Granja — <strong>080-4180-4463</strong> · ✉ <strong>onlinetncgroup@gmail.com</strong></p>
+          </div>
         </div>
       </div>
     </div>
@@ -2577,9 +2678,9 @@ footer {
             </div>
           </div>
           <div class="social-links">
-            <a href="#" class="social-btn fb" target="_blank">📘 Facebook</a>
-            <a href="https://www.youtube.com/@TokyoNepaliChurchJapan" class="social-btn yt" target="_blank">▶ YouTube</a>
-            <a href="https://www.tiktok.com/@tokyonepalichurch1" class="social-btn tk" target="_blank">♪ TikTok</a>
+            <a href="https://www.facebook.com/profile.php?id=100068941296101" class="social-btn fb" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
+            <a href="https://www.youtube.com/@TokyoNepaliChurchJapan" class="social-btn yt" target="_blank" rel="noopener noreferrer">▶ YouTube</a>
+            <a href="https://www.tiktok.com/@tokyonepalichurch1" class="social-btn tk" target="_blank" rel="noopener noreferrer">♪ TikTok</a>
           </div>
         </div>
         <div class="contact-visual">
@@ -2595,7 +2696,7 @@ footer {
             <span>📞 080-4180-4463</span>
           </div>
           <div style="margin-top:20px;position:relative;z-index:1;">
-            <a href="https://maps.google.com/?q=1+Chome-3-3+Shimo-Ochiai,+Shinjuku+City,+Tokyo,+Japan" target="_blank" class="btn btn-gold" style="display:inline-flex;">📍 Get Directions</a>
+            <a href="https://maps.google.com/?q=1+Chome-3-3+Shimo-Ochiai,+Shinjuku+City,+Tokyo,+Japan" target="_blank" rel="noopener noreferrer" class="btn btn-gold" style="display:inline-flex;">📍 Get Directions</a>
           </div>
         </div>
       </div>
@@ -2618,13 +2719,13 @@ footer {
       <div class="footer-col">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="#" onclick="showPage('home')">Home</a></li>
-          <li><a href="#" onclick="showPage('about')">About Us</a></li>
-          <li><a href="#" onclick="showPage('sermons')">Sermons</a></li>
-          <li><a href="#" onclick="showPage('events')">Events</a></li>
-          <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
-          <li><a href="#" onclick="showPage('prayer')">Prayer Request</a></li>
-          <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+          <li><a href="#home" onclick="showPage('home', event)">Home</a></li>
+          <li><a href="#about" onclick="showPage('about', event)">About Us</a></li>
+          <li><a href="#sermons" onclick="showPage('sermons', event)">Sermons</a></li>
+          <li><a href="#events" onclick="showPage('events', event)">Events</a></li>
+          <li><a href="#gallery" onclick="showPage('gallery', event)">Gallery</a></li>
+          <li><a href="#prayer" onclick="showPage('prayer', event)">Prayer Request</a></li>
+          <li><a href="#contact" onclick="showPage('contact', event)">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -2639,9 +2740,9 @@ footer {
       <div class="footer-col">
         <h4>Connect</h4>
         <ul>
-          <li><a href="https://www.facebook.com/profile.php?id=100068941296101" target="_blank">📘 Facebook Page</a></li>
-          <li><a href="https://www.youtube.com/@TokyoNepaliChurchJapan" target="_blank">▶ YouTube Channel</a></li>
-          <li><a href="https://www.tiktok.com/@tokyonepalichurch1" target="_blank">♪ TikTok</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100068941296101" target="_blank" rel="noopener noreferrer">📘 Facebook Page</a></li>
+          <li><a href="https://www.youtube.com/@TokyoNepaliChurchJapan" target="_blank" rel="noopener noreferrer">▶ YouTube Channel</a></li>
+          <li><a href="https://www.tiktok.com/@tokyonepalichurch1" target="_blank" rel="noopener noreferrer">♪ TikTok</a></li>
           <li><a href="mailto:onlinetncgroup@gmail.com">✉ Email Us</a></li>
           <li><a href="tel:+818041804463">📞 080-4180-4463</a></li>
         </ul>
@@ -2650,9 +2751,9 @@ footer {
     <div class="footer-bottom">
       <p>© 2026 Tokyo Nepali Church (TNC) · Tokyo, Japan · All Rights Reserved</p>
       <div class="ft-social">
-        <a href="https://www.facebook.com/profile.php?id=100068941296101" target="_blank" title="Facebook">📘</a>
-        <a href="https://www.youtube.com/@TokyoNepaliChurchJapan" target="_blank" title="YouTube">▶</a>
-        <a href="https://www.tiktok.com/@tokyonepalichurch1" target="_blank" title="TikTok">♪</a>
+        <a href="https://www.facebook.com/profile.php?id=100068941296101" target="_blank" rel="noopener noreferrer" title="Facebook">📘</a>
+        <a href="https://www.youtube.com/@TokyoNepaliChurchJapan" target="_blank" rel="noopener noreferrer" title="YouTube">▶</a>
+        <a href="https://www.tiktok.com/@tokyonepalichurch1" target="_blank" rel="noopener noreferrer" title="TikTok">♪</a>
       </div>
     </div>
   </div>
@@ -2661,7 +2762,18 @@ footer {
 <!-- ===== JAVASCRIPT ===== -->
 <script>
 // Page navigation
-function showPage(pageId) {
+const VALID_PAGES = ['home', 'about', 'sermons', 'events', 'gallery', 'prayer', 'contact'];
+
+function showPage(pageId, trigger) {
+  if (trigger && typeof trigger.preventDefault === 'function') {
+    trigger.preventDefault();
+  }
+  const updateHistory = trigger !== false;
+
+  if (!VALID_PAGES.includes(pageId)) {
+    pageId = 'home';
+  }
+
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   const targetPage = document.getElementById('page-' + pageId);
   if (targetPage) {
@@ -2678,18 +2790,55 @@ function showPage(pageId) {
   document.querySelectorAll('.mobile-menu a[id^="m-nav-"]').forEach(a => a.classList.remove('active-page'));
   const mNavEl = document.getElementById('m-nav-' + pageId);
   if (mNavEl) mNavEl.classList.add('active-page');
+
+  // Update browser URL hash without jarring jump
+  if (updateHistory) {
+    const targetHash = pageId === 'home' ? '' : '#' + pageId;
+    if (window.location.hash !== targetHash) {
+      if (window.history && window.history.pushState) {
+        window.history.pushState(null, '', targetHash || window.location.pathname + window.location.search);
+      } else {
+        window.location.hash = targetHash;
+      }
+    }
+  }
 }
 
 // Navigate to Location on Home page
 function navigateToLocation(e) {
-  if (e) e.preventDefault();
-  showPage('home');
+  if (e && typeof e.preventDefault === 'function') {
+    e.preventDefault();
+  }
+  showPage('home', false);
+  if (window.history && window.history.pushState) {
+    window.history.pushState(null, '', '#service-section');
+  }
   setTimeout(() => {
     const el = document.getElementById('service-section');
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
-  }, 150);
+  }, 100);
+}
+
+// Handle browser URL hash on load & popstate/hashchange
+function handleHashRoute() {
+  const hash = (window.location.hash || '').replace('#', '').trim().toLowerCase();
+  if (hash === 'service-section') {
+    navigateToLocation();
+  } else if (VALID_PAGES.includes(hash)) {
+    showPage(hash, false);
+  } else if (hash === '' || hash === 'home') {
+    showPage('home', false);
+  }
+}
+
+window.addEventListener('popstate', handleHashRoute);
+window.addEventListener('hashchange', handleHashRoute);
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', handleHashRoute);
+} else {
+  handleHashRoute();
 }
 
 // Mobile menu toggle
@@ -2742,31 +2891,163 @@ const pageObserver = new MutationObserver(() => {
 });
 pageObserver.observe(document.body, { childList: true, subtree: true });
 
-// Prayer Request Form — EmailJS connect गर्दा यो function भित्र emailjs.send() थप्नुहोस्
+// Initialize EmailJS
+emailjs.init({ publicKey: "-2zS0U4keVGFr5-qy" });
+
+// Prayer Request Form Submission Logic
+const prayerForm = document.getElementById('prayer-form');
+
+if (prayerForm) {
+  prayerForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const form = this;
+    const name = document.getElementById('prayer-name').value.trim();
+    const message = document.getElementById('prayer-message').value.trim();
+    const status = document.getElementById('prayer-status');
+    const submitBtn = document.getElementById('prayer-submit-btn') || form.querySelector('button[type="submit"]');
+
+    if (!name || !message) {
+      status.style.display = 'block';
+      status.style.color   = '#f87171';
+      status.textContent   = '⚠ कृपया नाम र सन्देश भर्नुहोस्।';
+      return;
+    }
+
+    // Generate current date & time in Japan/Tokyo timezone for {{time}}
+    const submissionTime = new Date().toLocaleString('en-US', { timeZone: 'Asia/Tokyo' });
+    let timeInput = document.getElementById('prayer-time') || form.querySelector('input[name="time"]');
+    if (!timeInput) {
+      timeInput = document.createElement('input');
+      timeInput.type = 'hidden';
+      timeInput.id = 'prayer-time';
+      timeInput.name = 'time';
+      form.appendChild(timeInput);
+    }
+    timeInput.value = submissionTime;
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'सन्देश पठाउँदैछ...';
+    }
+    status.style.display = 'none';
+
+    emailjs.sendForm('service_rd4gcd6', 'template_rmry90e', this)
+      .then(() => {
+        form.reset();
+        document.getElementById('prayer-name').value = '';
+        document.getElementById('prayer-contact').value = '';
+        document.getElementById('prayer-message').value = '';
+
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'सन्देश पठाउनुहोस्';
+        }
+
+        status.style.display = 'block';
+        status.style.color   = '#86efac';
+        status.textContent   = 'तपाईंको सन्देश सफलतापूर्वक पठाइयो! धन्यवाद — जयमसिह 🙏';
+      })
+      .catch((error) => {
+        console.error('EmailJS error:', error);
+
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'सन्देश पठाउनुहोस्';
+        }
+
+        status.style.display = 'block';
+        status.style.color   = '#f87171';
+        status.textContent   = 'सन्देश पठाउन समस्या भयो। कृपया फेरि प्रयास गर्नुहोस् वा सिधै सम्पर्क गर्नुहोस्।';
+      });
+  });
+}
+
 function submitPrayerRequest() {
-  const name    = document.getElementById('prayer-name').value.trim();
-  const contact = document.getElementById('prayer-contact').value.trim();
-  const message = document.getElementById('prayer-message').value.trim();
-  const status  = document.getElementById('prayer-status');
-
-  if (!name || !message) {
-    status.style.display = 'block';
-    status.style.color   = '#f87171';
-    status.textContent   = '⚠ कृपया नाम र सन्देश भर्नुहोस्।';
-    return;
+  const form = document.getElementById('prayer-form');
+  if (form) {
+    if (form.requestSubmit) {
+      form.requestSubmit();
+    } else {
+      form.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+    }
   }
+}
 
-  // TODO: EmailJS connect गर्दा तलको लाइन uncomment गरेर आफ्नो IDs राख्नुहोस्:
-  // emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', { name, contact, message })
-  //   .then(() => { /* success */ })
-  //   .catch((err) => { console.error('EmailJS error:', err); });
+// Prayer Page Form Submission Logic
+const prayerPageForm = document.getElementById('prayer-page-form');
 
-  status.style.display = 'block';
-  status.style.color   = '#86efac';
-  status.textContent   = '✅ तपाईंको सन्देश पठाइयो! धन्यवाद — जयमसिह 🙏';
-  document.getElementById('prayer-name').value    = '';
-  document.getElementById('prayer-contact').value = '';
-  document.getElementById('prayer-message').value = '';
+if (prayerPageForm) {
+  prayerPageForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const form = this;
+    const name = document.getElementById('prayer-page-name').value.trim();
+    const contact = document.getElementById('prayer-page-contact').value.trim();
+    const message = document.getElementById('prayer-page-message').value.trim();
+    const status = document.getElementById('prayer-page-status');
+    const submitBtn = document.getElementById('prayer-page-submit-btn') || form.querySelector('button[type="submit"]');
+
+    if (!name || !contact || !message) {
+      status.style.display = 'block';
+      status.style.background = '#fffbeb';
+      status.style.border = '1px solid #fde68a';
+      status.style.color = '#b45309';
+      status.textContent = '⚠ कृपया सबै आवश्यक विवरणहरू (नाम, सम्पर्क, र प्रार्थनाको विषय) भर्नुहोस्।';
+      return;
+    }
+
+    // Generate current date & time in Japan/Tokyo timezone for {{time}}
+    const submissionTime = new Date().toLocaleString('en-US', { timeZone: 'Asia/Tokyo' });
+    let timeInput = document.getElementById('prayer-page-time') || form.querySelector('input[name="time"]');
+    if (!timeInput) {
+      timeInput = document.createElement('input');
+      timeInput.type = 'hidden';
+      timeInput.id = 'prayer-page-time';
+      timeInput.name = 'time';
+      form.appendChild(timeInput);
+    }
+    timeInput.value = submissionTime;
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'पठाउँदैछ...';
+    }
+    status.style.display = 'none';
+
+    emailjs.sendForm('service_rd4gcd6', 'template_rmry90e', this)
+      .then(() => {
+        form.reset();
+        document.getElementById('prayer-page-name').value = '';
+        document.getElementById('prayer-page-contact').value = '';
+        document.getElementById('prayer-page-message').value = '';
+
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'प्रार्थना अनुरोध पठाउनुहोस्';
+        }
+
+        status.style.display = 'block';
+        status.style.background = '#ecfdf5';
+        status.style.border = '1px solid #86efac';
+        status.style.color = '#15803d';
+        status.textContent = 'तपाईंको प्रार्थना अनुरोध सफलतापूर्वक पठाइयो! मण्डलीको टोलीले तपाईंको लागि प्रार्थना गर्नेछ। जयमसिह 🙏';
+      })
+      .catch((error) => {
+        console.error('EmailJS prayer page error:', error);
+
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'प्रार्थना अनुरोध पठाउनुहोस्';
+        }
+
+        status.style.display = 'block';
+        status.style.background = '#fef2f2';
+        status.style.border = '1px solid #fca5a5';
+        status.style.color = '#b91c1c';
+        status.textContent = 'प्रार्थना अनुरोध पठाउन समस्या भयो। कृपया फेरि प्रयास गर्नुहोस् वा हामीलाई सिधै सम्पर्क गर्नुहोस्।';
+      });
+  });
 }
 </script>
 </body>
